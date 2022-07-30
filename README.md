@@ -10,3 +10,6 @@ git clone https://github.com/veronicavasq/event-demo.git
 ```
 
 2. Run script `./startEventDemo.sh`
+
+## Open API docs
+http://localhost:8080/demo/swagger-ui/index.html
