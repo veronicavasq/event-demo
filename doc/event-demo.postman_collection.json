@@ -1,0 +1,140 @@
+{
+	"id": "b2f24aa0-5ecb-b501-576b-d0575be1ef79",
+	"name": "event-demo",
+	"description": "",
+	"order": [
+		"f7f90df8-fa55-9d74-f805-5a90bdb217cc",
+		"320cc042-24f7-3b5c-6c3e-79b523cd3713",
+		"567734bf-008f-0a65-049a-60209dbe8a62",
+		"774f151a-24af-b323-c784-cc41e3fb6867"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1659215612707,
+	"owner": 7107200,
+	"public": false,
+	"requests": [
+		{
+			"id": "320cc042-24f7-3b5c-6c3e-79b523cd3713",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/demo/event/violation/1/payment",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "b2f24aa0-5ecb-b501-576b-d0575be1ef79",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:8080/demo/event/violation/1/payment",
+			"description": "Pay a violation",
+			"descriptionFormat": "html",
+			"time": 1659215892713,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "567734bf-008f-0a65-049a-60209dbe8a62",
+			"headers": "",
+			"headerData": [],
+			"url": " http://localhost:8080/demo/event/violation?eventType=SPEED&paid=true&licensePlate=adf",
+			"queryParams": [
+				{
+					"key": "eventType",
+					"value": "SPEED",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "paid",
+					"value": "true",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "licensePlate",
+					"value": "adf",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "b2f24aa0-5ecb-b501-576b-d0575be1ef79",
+			"data": null,
+			"dataMode": "params",
+			"name": " http://localhost:8080/demo/event/violation?eventType=SPEED&paid=true&licensePlate=adf",
+			"description": "List violations",
+			"descriptionFormat": "html",
+			"time": 1659215978448,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "774f151a-24af-b323-c784-cc41e3fb6867",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/demo/event/violation/summary",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "b2f24aa0-5ecb-b501-576b-d0575be1ef79",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:8080/demo/event/violation/summary",
+			"description": "Summary report",
+			"descriptionFormat": "html",
+			"time": 1659215989584,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "f7f90df8-fa55-9d74-f805-5a90bdb217cc",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/demo/event",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "b2f24aa0-5ecb-b501-576b-d0575be1ef79",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8080/demo/event",
+			"description": "Save a event",
+			"descriptionFormat": "html",
+			"time": 1659215798360,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n  \"id\": \"string\",\r\n  \"eventDate\": \"2022-07-30T21:14:45.274Z\",\r\n  \"eventType\": \"SPEED\",\r\n  \"licensePlate\": \"string\",\r\n  \"speed\": 0,\r\n  \"limit\": 0,\r\n  \"unity\": \"string\",\r\n  \"processed\": true\r\n}"
+		}
+	]
+}
