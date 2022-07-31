@@ -1,5 +1,6 @@
 package com.event.demo.exception;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class ErrorInfo {
@@ -16,6 +17,19 @@ public class ErrorInfo {
         this.code = code;
         this.additionalData = additionalData;
     }
+
+    public ErrorInfo(String type, String code) {
+        this.type = type;
+        this.code = code;
+    }
+
+    public ErrorInfo(String type, String code, String message) {
+        this.type = type;
+        this.code = code;
+        this.additionalData = new HashMap<>();
+        additionalData.put("message", message);
+    }
+
 
     public String getType() {
         return type;
